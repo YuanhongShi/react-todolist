@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer, useContext } from "react";
+import "./App.css";
 
-function App() {
+import Input from "./components/Input";
+import TodoList from "./components/TodoList";
+
+import {useGlobalContext} from './context/context'
+
+function App() { 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__container">
+        <div className="app__todoConatiner">
+         <TodoList />
+        </div>
+        <Input />
+      </div>
     </div>
   );
 }
