@@ -12,7 +12,6 @@ const AppProvider = ({children}) => {
 
   const addTodo = (input) => {
     dispatch({type: 'addTodo', payload: {name:input, id: new Date().toString(), done: false}})
-
   }
   
   return (

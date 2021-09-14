@@ -1,6 +1,5 @@
-import React, { useReducer, useState, useContext } from "react";
+import React, {  useState } from "react";
 import "./Input.css";
-import reducer from "../context/reducer";
 
 import { useGlobalContext } from "../context/context";
 

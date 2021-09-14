@@ -1,10 +1,9 @@
-import React, { useReducer, useContext } from "react";
+import React from "react";
 import "./App.css";
 
 import Input from "./components/Input";
 import TodoList from "./components/TodoList";
 
-import {useGlobalContext} from './context/context'
 
 function App() { 
 
